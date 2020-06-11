@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let mang = [];
+        let n = prompt('nhap chieu dai mang');
+        for (i = 0; i < n; i++) {
+            mang[i] = prompt('nhap ki tu trong mang');
+            let str = mang[i];
+            for(let j =0; j<str.length; j++){
+                if(str[j]=='-'){
+                    
+                    str = str.replace('-','_');
+                }
+            }
+           
+           
+            mang[i] = str;
+            
+           
+        }
+        document.write(mang)
+    </script>
+</body>
+
+</html>

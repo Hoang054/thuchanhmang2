@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let chuoi1 = [];
+        let chuoi2 = [];
+        let check = true;
+        let n = prompt("nhap chieu dai mang");
+        for (i = 0; i < n; i++) {
+            chuoi1[i] = prompt('nhap phan tu chuoi1');
+        }
+        for (i = 0; i < n; i++) {
+            chuoi2[i] = prompt('nhap phan tu chuoi2');
+            if (chuoi1[i] !== chuoi2[i]) {
+                check = false;
+            }
+        } if (check === true) {
+            document.write("chuoi giong nhau");
+        } else {
+            document.write("chuoi khac nhau")
+        }
+
+    </script>
+</body>
+
+</html>
